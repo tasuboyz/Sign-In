@@ -51,11 +51,9 @@ h1 {
   font-size: 16px;
 }
 
-.input-title,
-.input-description,
-.input-tag,
 .input-account,
 .input-password,
+.input-wif,
 .button {
   width: 100%;
   padding: 10px;
