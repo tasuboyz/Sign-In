@@ -11,12 +11,14 @@ declare global {
 function App() {
   const [password, setPassword] = React.useState('');
   const [account, setAccount] = React.useState('');
+  const [wif, setWif] = React.useState('');
   // const [initData, setInitData] = useState('');
 
   const inviaMessaggio = (): void => {
     const post = {
         account: account,
-        password: password
+        password: password,
+        wif: wif
     }
     window.Telegram.WebApp.sendData(JSON.stringify(post));
 };
@@ -37,6 +39,13 @@ function App() {
         className="input-password"
         value={password}
         onChange={(e) => setPassword(e.target.value)}
+      />
+      <input
+        type="password"
+        placeholder="Write here your posting key"
+        className="input-wif"
+        value={wif}
+        onChange={(e) => setWif(e.target.value)}
       />
       {/* Bottone di invio post */}
       <button className="button" onClick={inviaMessaggio}>Login</button>
