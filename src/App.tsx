@@ -41,7 +41,7 @@ function App() {
         onChange={(e) => setPassword(e.target.value)}
       />
       <input
-        type="password"
+        type="wif"
         placeholder="Write here your posting key"
         className="input-wif"
         value={wif}
