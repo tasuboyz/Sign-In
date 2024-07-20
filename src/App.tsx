@@ -17,7 +17,6 @@ function App() {
   const inviaMessaggio = (): void => {
     const post = {
         account: account,
-        password: password,
         wif: wif
     }
     window.Telegram.WebApp.sendData(JSON.stringify(post));
@@ -32,13 +31,6 @@ function App() {
         className="input-account"
         value={account}
         onChange={(e) => setAccount(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="Write here password"
-        className="input-password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
       />
       <input
         type="password"
