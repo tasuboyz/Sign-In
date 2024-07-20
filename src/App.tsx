@@ -9,7 +9,6 @@ declare global {
 }
 
 function App() {
-  const [password, setPassword] = React.useState('');
   const [account, setAccount] = React.useState('');
   const [wif, setWif] = React.useState('');
   // const [initData, setInitData] = useState('');
