@@ -51,6 +51,10 @@ h1 {
   font-size: 16px;
 }
 
+.input-account {
+  text-transform: lowercase;
+}
+
 .input-account,
 .input-wif,
 .button {
