@@ -16,7 +16,7 @@ function App() {
   const inviaMessaggio = (): void => {
     const post = {
         account: account,
-        password: wif
+        wif: wif
     }
     window.Telegram.WebApp.sendData(JSON.stringify(post));
 };
